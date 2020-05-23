@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>SIMHPrefs First Page</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Enabled</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>isEnabled</string>
+			<key>postNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Sizing</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Always small</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>alwaysSmall</string>
+			<key>postNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>min</key>
+			<real>0</real>
+			<key>max</key>
+			<real>49</real>
+			<key>showValue</key>
+			<true/>
+			<key>default</key>
+			<real>20.0</real>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>padding</string>
+			<key>postNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>SIMHPrefs</string>
+</dict>
+</plist>
