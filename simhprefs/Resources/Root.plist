@@ -21,7 +21,29 @@
 			<string>com.jakesnake.simhprefs</string>
 			<key>key</key>
 			<string>isEnabled</string>
-			<key>postNotification</key>
+			<key>PostNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Custom HUD</string>
+			<key>footerText</key>
+			<string>iOS 13 only</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Custom HUD</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>customHUD</string>
+			<key>PostNotification</key>
 			<string>com.jakesnake.simhprefs/changed</string>
 		</dict>
 		<dict>
@@ -32,16 +54,26 @@
 		</dict>
 		<dict>
 			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>label</key>
-			<string>Always small</string>
+			<string>PSSegmentCell</string>
+			<key>validTitles</key>
+			<array>
+				<string>Always Small</string>
+				<string>Dynamic Sizing</string>
+				<string>Always Big</string>
+			</array>
+			<key>validValues</key>
+			<array>
+				<integer>1</integer>
+				<integer>2</integer>
+				<integer>3</integer>
+			</array>
 			<key>default</key>
-			<true/>
+			<integer>1</integer>
 			<key>defaults</key>
 			<string>com.jakesnake.simhprefs</string>
 			<key>key</key>
-			<string>alwaysSmall</string>
-			<key>postNotification</key>
+			<string>sizingMode</string>
+			<key>PostNotification</key>
 			<string>com.jakesnake.simhprefs/changed</string>
 		</dict>
 		<dict>
@@ -54,13 +86,91 @@
 			<key>showValue</key>
 			<true/>
 			<key>default</key>
-			<real>20.0</real>
+			<real>10.5</real>
 			<key>defaults</key>
 			<string>com.jakesnake.simhprefs</string>
 			<key>key</key>
 			<string>padding</string>
-			<key>postNotification</key>
+			<key>PostNotification</key>
 			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Dynamic Color Alpha</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>label</key>
+			<string>Enable Dynamic Colors</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>dynamicColors</string>
+			<key>PostNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>min</key>
+			<real>0</real>
+			<key>max</key>
+			<real>1</real>
+			<key>showValue</key>
+			<true/>
+			<key>isSegmented</key>
+			<true/>
+			<key>segmentCount</key>
+			<integer>10</integer>
+			<key>default</key>
+			<real>0.5</real>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>colorAlpha</string>
+			<key>PostNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>Animation Speed</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSliderCell</string>
+			<key>isSegmented</key>
+			<true/>
+			<key>showValue</key>
+			<true/>
+			<key>segmentCount</key>
+			<real>20</real>
+			<key>min</key>
+			<real>0</real>
+			<key>max</key>
+			<real>2</real>
+			<key>default</key>
+			<real>1</real>
+			<key>defaults</key>
+			<string>com.jakesnake.simhprefs</string>
+			<key>key</key>
+			<string>animationSpeed</string>
+			<key>PostNotification</key>
+			<string>com.jakesnake.simhprefs/changed</string>
+		</dict>
+		<dict>
+			<key>cellClass</key>
+	    <string>HBTwitterCell</string>
+	    <key>label</key>
+	    <string>HASHBANG Productions</string>
+	    <key>user</key>
+	    <string>hbangws</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -1,10 +1,10 @@
 Package: com.jakesnake.stuckinmyhud
 Name: stuckinmyhud
-Depends: mobilesubstrate
+Depends: mobilesubstrate, ws.hbang.common (>= 1.11)
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: Jake
 Author: Jake
 Section: Tweaks
-Version: 0.0.1-319+debug
-Installed-Size: 292
+Version: 0.0.1-741+debug
+Installed-Size: 540
