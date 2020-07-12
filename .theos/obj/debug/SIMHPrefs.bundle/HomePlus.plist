@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>icon</key>
+	<string>icon.png</string>
+	<key>pages</key>
+	<array>
+		<dict>
+			<key>bottomControlType</key>
+			<string>None</string>
+			<key>icon</key>
+			<string>icon.png</string>
+			<key>topControlType</key>
+			<string>Slider</string>
+			<key>topLabel</key>
+			<string>Padding</string>
+			<key>topMax</key>
+			<integer>49</integer>
+			<key>topMin</key>
+			<integer>0</integer>
+			<key>topPostNotification</key>
+			<string>com.jakesnake.simhprefs/changed_hp</string>
+			<key>topPreferenceKeyLink</key>
+			<string>padding</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>StuckInMyHUD</string>
+</dict>
+</plist>
